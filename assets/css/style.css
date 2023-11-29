@@ -10,11 +10,20 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Vertically center items */
   padding: 10px;
 }
 
-.header h1 {
-  margin: 0;
+.header-left h1 {
+  margin: 30px;
+}
+
+.header-right {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center items */
+  
 }
 
 .navigation {
@@ -24,18 +33,31 @@ body {
 
 .navigation ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  display: flex; /* Display list items horizontally */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navigation li {
+  margin-right: 10px; /* Add a little spacing between list items if needed */
 }
 
 .navigation a {
   text-decoration: none;
   color: #333;
   padding: 10px;
+  border-bottom: 2px solid transparent; /* Initially transparent underline */
+  transition: border-color 0.3s ease; /* Smooth transition for underline color change */
+}
+
+/* Remove default marker for list items */
+.navigation li::marker {
+  content: none;
 }
 
 .navigation a:hover {
   background-color: #ddd;
+  border-color: #333; /* Change underline color on hover */
 }
 
 .content-section {
