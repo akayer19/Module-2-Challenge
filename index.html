@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alex Kaye's Portfolio</title>
-	<link rel="stylesheet" href="./assets/css/style.css" /> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alex's Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-	<div class="container"> 
+  <header>
+    <h1>Alex Kaye</h1>
+    <nav>
+      <a href="#about"><u>About Me</u></a>
+      <a href="#work"><u>Work</u></a>
+      <a href="#contact"><u>Contact Me</u></a>
+      <a href="#resume"><u>Resume</u></a>
+    </nav>
+  </header>
 
-		<!--Navbar-->
-		<nav> 
-			<a href="#">Alex Kaye</a> 
-			<div class="navbar"> 
-				<ul> 
-					<li><a href="#"><u>About Me</u></a></li> 
-					<li><a href="#"><u>Work</u></a></li> 
-					<li><a href="#"><u>Contact Me</u></a></li> 
-					<li><a href="#"><u>Resume</u></a></li> 
-				</ul> 
-			</div> 
-		</nav> 
+  <section class="vision-banner">
+    <div class="banner-content">
+      <img src="./assets/css/images/avatar.JPG" alt="Alex Kaye's Avatar" class="avatar">
+    </div>      
+    <h2>Let me create your vision!</h2>
+  </section>
 
-	
+  <main class="page-wrapper">
+    <section class="page-section" id="about">
+      <h2>About Me</h2>
+      <div>
+        <p>
+          Embarking on a new journey in the realm of web design, I am an enthusiastic newcomer eager to learn and refine my craft. With a passion for creating visually appealing and functional websites, I am committed to mastering the intricacies of web design. Embracing the challenge of navigating through coding languages, design principles, and user experience, I approach each project as an opportunity to enhance my skills and build a solid foundation in this dynamic field. Open to guidance and constructive feedback, I am dedicated to continuous improvement, seeking inspiration from the ever-evolving landscape of web design. Excited about the possibilities ahead, I am determined to carve my niche and contribute meaningfully to the world of digital aesthetics and functionality.
+        </p>
+        <p>
+          Embarking on the journey to become a professional full-stack developer, I am driven by a passion for comprehensive and versatile web development. Eager to master both front-end and back-end technologies, I am committed to honing my skills in languages such as HTML, CSS, JavaScript, and gaining proficiency in server-side scripting languages like Python, Ruby, or Node.js. My goal is to seamlessly integrate user interfaces with robust server-side logic, creating dynamic and efficient web applications. With a keen eye for design and a strong foundation in database management, I aim to create seamless and responsive digital experiences. Embracing the challenges of mastering diverse technologies, I am dedicated to staying abreast of industry trends and best practices, ensuring my ability to deliver high-quality, end-to-end solutions as a professional full-stack developer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Container -->
+    <section class="page-section" id="work">
+      <h2>Work</h2>
+      <div class="flex-container">
+        <a href="https://akayer19.github.io/Module-1-Challenge/" class="flex-item surf-report" target="_blank">
+          <div>
+            <h3>Bootcamp Module 1 Challenge</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
+        <a href="#" class="flex-item led-wall">
+          <div>
+            <h3>LED Wall</h3>
+            <span>Node/IoT</span>
+          </div>
+        </a>
+        <a href="#" class="flex-item react-calc">
+          <div>
+            <h3>Calculator</h3>
+            <span>React/JavaScript/CSS</span>
+          </div>
+        </a>
+        <a href="#" class="flex-item pastel-puzzles">
+          <div>
+            <h3>Pastel Puzzles</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
+        <a href="#" class="flex-item run-buddy">
+          <div>
+            <h3>Run Buddy</h3>
+            <span>HTML/CSS</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="page-section contact" id="contact">
+      <h2>Contact Me</h2>
+      <div>
+        <address>
+          <a href="tel:+920.238.1234">920.238.1234</a>
+          <a href="mailto:akayeauto@gmail.com">akayeauto@gmail.com</a>
+          <a href="https://github.com/akayer19" target="_blank">Github</a>
+        </address>
+      </div>
+    </section>
+
+    <section class="page-section resume" id="resume">
+      <h2>Resume</h2>
+      <div>
+        <resume>
+          <a href="../folder/document.html">Link to Document</a>
+        </resume>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
