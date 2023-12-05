@@ -12,5 +12,3 @@ Ensure that my work met the Acceptance Criteria and the full list of grading req
 None
 
 ## Installation
-
-None
