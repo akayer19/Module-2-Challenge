@@ -2,46 +2,37 @@
   box-sizing: border-box;
 }
 
-/* Brand color palette */
+
 :root {
-  --primary: rgb(60, 85, 120);
-  --secondary: rgb(145, 200, 205);
-  --tertiary: rgb(45, 50, 60);
-  --dark: rgb(25, 30, 30);
-  --light: rgb(220, 225, 235);
+  --first: rgb(136, 170, 136); 
+  --second: rgb(204, 153, 119); 
+  --third: rgb(153, 136, 136); 
+  --darker: rgb(102, 102, 102); 
+  --lighter: rgb(238, 221, 187);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--primary);
-  background-color: var(--light);
-  line-height: 1.2;
+  font-family: Arial, sans-serif;
+  color: var(--first);
+  background-color: var(--lighter);
+  line-height: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-/* Header styles */
 header {
   padding: 15px 6% 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--tertiary);
+  background-color: var(--third);
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
 header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
+  color: var(--third);
+  background-color: var(--second);
   padding: 10px 1%;
   margin: 0;
   font-size: 4vw;
@@ -58,34 +49,32 @@ nav {
 nav a {
   text-decoration: none;
   padding: 5px 10px;
-  color: var(--secondary);
+  color: var(--second);
   margin-right: 10px;
   font-size: 1.4rem;
 }
 
 nav a:hover {
   background-size: 100% 100%;
-  color: var(--primary);
+  color: var(--first);
 }
 
 nav a:last-child {
   margin-right: 0;
 }
 
-/* Main content styles */
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
-/* Vision banner styles */
 .vision-banner {
   background: rgb(68, 88, 120);
   background-size: cover;
   background-position: center;
-  background-blend-mode: soft-light;
+  background-blend-mode: soft-lighter;
   min-height: 10vh;
-  color: var(--light);
+  color: var(--lighter);
   padding: 2% 6%;
   display: flex;
   align-items: center;
@@ -106,8 +95,8 @@ main {
 }
 
 .vision-banner h2 {
-  background-color: var(--secondary);
-  color: var(--tertiary);
+  background-color: var(--second);
+  color: var(--third);
   margin: 0;
   padding: 5px 10px;
   font-size: 2.3rem;
@@ -115,14 +104,12 @@ main {
   display: inline-block;
 }
 
-/* Page wrapper styles */
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Page section styles */
 .page-section {
   margin: 25px 0;
   padding: 10px 0;
@@ -137,7 +124,7 @@ main {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
-  border-right: 4px solid var(--primary);
+  border-right: 4px solid var(--first);
   font-size: 4vw;
   line-height: 1.1;
 }
@@ -150,18 +137,16 @@ main {
   margin-bottom: 20px;
 }
 
-/* Flex container styles */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Flex item styles */
 .flex-item {
-  border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
+  border: 5px solid var(--second);
+  background-color: var(--first);
+  color: var(--third);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -170,7 +155,7 @@ main {
   padding: 0 0 20px 0;
   margin: 0.5em;
   text-decoration: none;
-  background-blend-mode: soft-light;
+  background-blend-mode: soft-lighter;
   background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
@@ -186,7 +171,7 @@ main {
 }
 
 .flex-item div {
-  background-color: var(--secondary);
+  background-color: var(--second);
   padding: 8px 10px;
 }
 
@@ -194,7 +179,6 @@ main {
   font-size: 1.6rem;
 }
 
-/* Contact section styles */
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -204,7 +188,7 @@ main {
 }
 
 .contact address a {
-  color: var(--tertiary);
+  color: var(--third);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -215,10 +199,9 @@ main {
 
 .contact address a:hover {
   background-size: 100% 88%;
-  color: var(--secondary);
+  color: var(--second);
 }
 
-/* Resume section styles */
 .resume {
   display: flex;
   flex-wrap: wrap;
@@ -228,7 +211,7 @@ main {
 }
 
 .resume a {
-  color: var(--tertiary);
+  color: var(--third);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -239,10 +222,9 @@ main {
 
 .resume a:hover {
   background-size: 100% 88%;
-  color: var(--secondary);
+  color: var(--second);
 }
 
-/* Portfolio project image styles */
 .surf-report { background-image: url("./images/Challenge-1.png"); }
 .led-wall { background-image: url("./images/LED-Wall.png"); }
 .react-calc { background-image: url("./images/Calculator.webp"); }
