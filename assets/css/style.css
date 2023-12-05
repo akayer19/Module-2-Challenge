@@ -6,7 +6,7 @@
 :root {
   --first: rgb(136, 170, 136); 
   --second: rgb(204, 153, 119); 
-  --third: rgb(153, 136, 136); 
+  --third: rgb(25, 23, 19);
   --darker: rgb(102, 102, 102); 
   --lighter: rgb(238, 221, 187);
 }
@@ -166,9 +166,6 @@ main {
   flex-basis: 100%;
 }
 
-.flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
 .flex-item div {
   background-color: var(--second);
